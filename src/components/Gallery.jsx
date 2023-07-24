@@ -8,6 +8,41 @@ import gg2 from "../assets/g6.webp";
 import g7 from "../assets/g7.webp";
 import g8 from "../assets/g8.webp";
 function Gallery() {
+  const itemData = [
+    {
+      img: g1,
+      title: "Breakfast",
+    },
+    {
+      img: g2,
+      title: "Burger",
+    },
+    {
+      img: g3,
+      title: "Camera",
+    },
+    {
+      img: g4,
+      title: "Coffee",
+    },
+    {
+      img: gg,
+      title: "Hats",
+    },
+    {
+      img: gg2,
+      title: "Honey",
+    },
+    {
+      img: g7,
+      title: "Basketball",
+    },
+    {
+      img: g8,
+      title: "Fern",
+    },
+  ];
+
   return (
     <ImageList
       sx={{
@@ -25,8 +60,9 @@ function Gallery() {
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <img
-            src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-            srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+            style={{ objectFit: "contain", height: "100%" }}
+            src={item.img}
+            srcSet={item.img}
             alt={item.title}
             loading="lazy"
           />
@@ -36,38 +72,4 @@ function Gallery() {
   );
 }
 
-const itemData = [
-  {
-    img: g1,
-    title: "Breakfast",
-  },
-  {
-    img: g2,
-    title: "Burger",
-  },
-  {
-    img: g3,
-    title: "Camera",
-  },
-  {
-    img: g4,
-    title: "Coffee",
-  },
-  {
-    img: gg,
-    title: "Hats",
-  },
-  {
-    img: gg2,
-    title: "Honey",
-  },
-  {
-    img: g7,
-    title: "Basketball",
-  },
-  {
-    img: g8,
-    title: "Fern",
-  },
-];
 export default Gallery;
