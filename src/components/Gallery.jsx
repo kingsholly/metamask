@@ -3,8 +3,8 @@ import g1 from "../assets/g1.webp";
 import g2 from "../assets/g2.webp";
 import g3 from "../assets/g3.webp";
 import g4 from "../assets/g4.webp";
-import g5 from "../assets/g5.webp";
-import g6 from "../assets/g6.webp";
+import gg from "../assets/g5.webp";
+import gg2 from "../assets/g6.webp";
 import g7 from "../assets/g7.webp";
 import g8 from "../assets/g8.webp";
 function Gallery() {
@@ -54,11 +54,11 @@ const itemData = [
     title: "Coffee",
   },
   {
-    img: g5,
+    img: gg,
     title: "Hats",
   },
   {
-    img: g6,
+    img: gg2,
     title: "Honey",
   },
   {
