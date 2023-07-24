@@ -1,0 +1,112 @@
+
+ @import url('https://fonts.cdnfonts.com/css/euclid-circular-b');
+
+               .dark,  .dark .headerdark  {
+                background-color: black !important;
+                color: white !important;
+               }
+               .dark .textdark   p        {
+               
+                color: white!important;
+               }
+
+               .dark .headerdark a{
+                color: white;
+               }
+
+               .dark .MuiSvgIcon-root {
+                fill: white;
+               }
+
+               .dark .MuiDrawer-paperAnchorTop {
+                background-color: black !important;
+                color: white !important;
+               }
+              
+               /* .dark .svgdark svg{
+                fill: white !important;
+               } */
+
+               .MuiDrawer-modal{
+                 height: fit-content !important;
+                 max-width: 60% !important;
+               }
+              
+  *{font-family: Euclid Circular B,sans-serif!important}
+                
+body{
+  font-family: "Euclid Circular B",sans-serif!important;
+  word-wrap: break-word;
+}
+.topbar{
+  background-color: #037dd5; 
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 13px 1px 11px;
+  position: relative;
+ 
+
+}
+.toplink a{
+color: white;
+text-decoration: none;
+border-bottom: 1px solid rgb(255, 255, 255);
+font-size: 14px;
+line-height: 120%;
+font-weight: 700!important;
+
+
+}
+.toplink{
+  text-align: center;
+  flex: 4;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.topicon{
+  color: white;
+  flex: 1;
+    cursor: pointer;
+    margin-right: 25px;
+    font-size: 10px;
+     position: absolute;
+      right: 0;
+
+}
+
+.topicon button{
+  color: white} 
+
+
+  .MuiMenuItem-root:hover {
+    color: #037dd5;
+    /* Add any other hover styles you want */
+  }
+
+  .featuredimage{
+    margin: 0px auto;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    aspect-ratio: auto 640 / 360;
+  }
+
+@media (min-width:600px) {
+    .swagimg{
+    width: 400px!important;
+    height: 400px!important;
+      }  }
+
+      @media (max-width:600px) {
+        .toplink a{
+       font-size: 10px;
+       width: 80%;
+          }  
+        
+          .toplink{
+            justify-content: left
+          }
+        }
